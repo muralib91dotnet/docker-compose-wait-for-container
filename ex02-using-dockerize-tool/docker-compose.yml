@@ -22,4 +22,4 @@ services:
     container_name: my_supper_app
     depends_on:
       - mysql
-    command: sh -c "dockerize -wait tcp://mysql:3306 -timeout 300s -wait-retry-interval 30s && cd /usr/local/bin && ./sayhello.sh"
+    # command: sh -c "cd /usr/local/bin && ./sayhelloworld.sh"
